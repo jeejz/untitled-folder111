@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_9PMAkB4lED6QOrA3uUyxaw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="__QWnEB4lED6QOrA3uUyxaw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_hr_approvalItem" structureRef="Boolean"/>
   <bpmn2:itemDefinition id="_it_approvalItem" structureRef="Boolean"/>
   <bpmn2:itemDefinition id="_offerItem" structureRef="Integer"/>
@@ -48,8 +48,8 @@
   <bpmn2:itemDefinition id="__8962C15F-55EC-46F7-B926-5D5A1FD8D35E_baseSalaryInputXItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="__8962C15F-55EC-46F7-B926-5D5A1FD8D35E_bonusInputXItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="__8962C15F-55EC-46F7-B926-5D5A1FD8D35E_approveOutputXItem" structureRef="Boolean"/>
-  <bpmn2:collaboration id="_47FAFC71-4D53-4661-95D1-714BA7937165" name="Default Collaboration">
-    <bpmn2:participant id="_765904BE-8353-4FA0-9ADE-4C517FE3A431" name="Pool Participant" processRef="hiring"/>
+  <bpmn2:collaboration id="_3D567DF8-0239-41B5-8194-53C5E70C12F9" name="Default Collaboration">
+    <bpmn2:participant id="_1E2D80A8-E62B-48F4-8BC5-F7343DA20533" name="Pool Participant" processRef="hiring"/>
   </bpmn2:collaboration>
   <bpmn2:process id="hiring" drools:packageName="org.kie.kogito.hr" drools:version="1.0" drools:adHoc="false" name="hiring" isExecutable="true" processType="Public">
     <bpmn2:property id="hr_approval" itemSubjectRef="_hr_approvalItem" name="hr_approval">
@@ -341,8 +341,8 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
         <bpmn2:sourceRef>_8962C15F-55EC-46F7-B926-5D5A1FD8D35E_approveOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>it_approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:potentialOwner id="_9PQ5EB4lED6QOrA3uUyxaw">
-        <bpmn2:resourceAssignmentExpression id="_9PQ5ER4lED6QOrA3uUyxaw">
+      <bpmn2:potentialOwner id="__QaRcB4lED6QOrA3uUyxaw">
+        <bpmn2:resourceAssignmentExpression id="__QaRcR4lED6QOrA3uUyxaw">
           <bpmn2:formalExpression>jdoe</bpmn2:formalExpression>
         </bpmn2:resourceAssignmentExpression>
       </bpmn2:potentialOwner>
@@ -433,8 +433,8 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
         <bpmn2:sourceRef>_B8C4F63C-81AD-4291-9C1B-84967277EEF6_bonusOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>bonus</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:potentialOwner id="_9PRgIB4lED6QOrA3uUyxaw">
-        <bpmn2:resourceAssignmentExpression id="_9PRgIR4lED6QOrA3uUyxaw">
+      <bpmn2:potentialOwner id="__Qa4gB4lED6QOrA3uUyxaw">
+        <bpmn2:resourceAssignmentExpression id="__Qa4gR4lED6QOrA3uUyxaw">
           <bpmn2:formalExpression>jdoe</bpmn2:formalExpression>
         </bpmn2:resourceAssignmentExpression>
       </bpmn2:potentialOwner>
@@ -442,7 +442,7 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
     <bpmn2:startEvent id="_1639F738-45F3-4CD6-A80E-CCEBAA605D56">
       <bpmn2:outgoing>_8863B46B-9B0F-40B9-AAB1-A7503CF9AA0A</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:boundaryEvent id="_116F3C54-A10E-4952-9E08-1CACE74CED0B" drools:dockerinfo="60.93617021276596^74|" drools:boundaryca="true" attachedToRef="_B8C4F63C-81AD-4291-9C1B-84967277EEF6">
+    <bpmn2:boundaryEvent id="_116F3C54-A10E-4952-9E08-1CACE74CED0B" drools:dockerinfo="688^86.00000000000006|" drools:boundaryca="true" attachedToRef="_B8C4F63C-81AD-4291-9C1B-84967277EEF6">
       <bpmn2:outgoing>_7B41F971-C74D-4036-8A5E-EFF81C37986A</bpmn2:outgoing>
       <bpmn2:timerEventDefinition>
         <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression">PT180S</bpmn2:timeDuration>
@@ -458,7 +458,7 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
   <bpmndi:BPMNDiagram>
     <bpmndi:BPMNPlane bpmnElement="hiring">
       <bpmndi:BPMNShape id="shape__116F3C54-A10E-4952-9E08-1CACE74CED0B" bpmnElement="_116F3C54-A10E-4952-9E08-1CACE74CED0B">
-        <dc:Bounds height="56" width="56" x="688.936170212766" y="86.00000000000006"/>
+        <dc:Bounds height="56" width="56" x="1316" y="98.00000000000011"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__B375FFE6-D0A8-4E4F-A7AA-8B1E8B861E0D" bpmnElement="_B375FFE6-D0A8-4E4F-A7AA-8B1E8B861E0D">
         <dc:Bounds height="56" width="56" x="896.46" y="86.00000000000006"/>
@@ -494,19 +494,19 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
         <dc:Bounds height="56" width="56" x="1329" y="392.00000000000006"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__6CE52250-BCEE-485C-8AE4-F6CACF2EF5A1" bpmnElement="_6CE52250-BCEE-485C-8AE4-F6CACF2EF5A1">
-        <dc:Bounds height="56" width="56" x="1328.75" y="35.00000000000006"/>
+        <dc:Bounds height="56" width="56" x="1347.75" y="202"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__57DBE42C-6850-4A08-AC73-2BB0FFDFCC8C" bpmnElement="_57DBE42C-6850-4A08-AC73-2BB0FFDFCC8C">
         <dc:Bounds height="102" width="154" x="437" y="12.000000000000057"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__940F2A0C-8CC6-4ECA-B504-49363AF68B67" bpmnElement="_940F2A0C-8CC6-4ECA-B504-49363AF68B67">
-        <dc:Bounds height="102" width="154" x="1134" y="12.000000000000057"/>
+        <dc:Bounds height="102" width="154" x="1384" y="12.000000000000057"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F1B20FAB-EDDC-4114-8AE8-B00E3F94975E" bpmnElement="_F1B20FAB-EDDC-4114-8AE8-B00E3F94975E">
         <dc:Bounds height="56" width="56" x="795" y="196"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__116F3C54-A10E-4952-9E08-1CACE74CED0B_to_shape__F1B20FAB-EDDC-4114-8AE8-B00E3F94975E" bpmnElement="_7B41F971-C74D-4036-8A5E-EFF81C37986A">
-        <di:waypoint x="716.936170212766" y="114.00000000000006"/>
+        <di:waypoint x="1344" y="126.00000000000011"/>
         <di:waypoint x="823" y="196"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__B375FFE6-D0A8-4E4F-A7AA-8B1E8B861E0D_to_shape__F1B20FAB-EDDC-4114-8AE8-B00E3F94975E" bpmnElement="_C500BCB4-FBE1-43A0-A7C8-5F72670CD927">
@@ -547,7 +547,7 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__B9662806-84F3-4444-AD62-4790CDA7C85D_to_shape__940F2A0C-8CC6-4ECA-B504-49363AF68B67" bpmnElement="_B11455DE-F77A-4251-A85B-4C66636E3CD9">
         <di:waypoint x="1088" y="63"/>
-        <di:waypoint x="1134" y="63.00000000000006"/>
+        <di:waypoint x="1384" y="63.00000000000006"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__A51A809E-03C0-4EA7-91F1-7B3C5E29AD04_to_shape__30C8C01B-4149-4AE5-8D86-D27D57BCA8E7" bpmnElement="_C6E61C53-FD35-4347-B69E-30AA93AE4404">
         <di:waypoint x="371.75" y="91.00000000000006"/>
@@ -567,8 +567,8 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
         <di:waypoint x="1406" y="392.00000000000006"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__940F2A0C-8CC6-4ECA-B504-49363AF68B67_to_shape__6CE52250-BCEE-485C-8AE4-F6CACF2EF5A1" bpmnElement="_7DDA574A-C220-4FEF-9784-22EF8052EDEC">
-        <di:waypoint x="1211" y="63.00000000000006"/>
-        <di:waypoint x="1356.75" y="63.00000000000006"/>
+        <di:waypoint x="1461" y="63.00000000000006"/>
+        <di:waypoint x="1375.75" y="230"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
@@ -727,7 +727,7 @@ kcontext.setVariable("it_approval", false);</bpmn2:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_9PMAkB4lED6QOrA3uUyxaw</bpmn2:source>
-    <bpmn2:target>_9PMAkB4lED6QOrA3uUyxaw</bpmn2:target>
+    <bpmn2:source>__QWnEB4lED6QOrA3uUyxaw</bpmn2:source>
+    <bpmn2:target>__QWnEB4lED6QOrA3uUyxaw</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
